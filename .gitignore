@@ -1,0 +1,40 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Local data and generated files
+data/
+results/
+
+# Uploaded media (will be transferred to the server separately)
+media/*
+!media/.gitkeep
+
+# Database backups
+backup_*.sql
+
+# Generated QR codes
+backend/media/

@@ -1,0 +1,42 @@
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+
+  --background: #f8f7f3;
+  --text-dark: #292821;
+  --text-muted: #77746c;
+  --border: #e5e1d8;
+  --accent: #a47750;
+  --cover-bg: #eee8de;
+
+  color: var(--text-dark);
+  background: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+audio {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}

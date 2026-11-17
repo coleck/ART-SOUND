@@ -1,0 +1,345 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.admin-page {
+    min-height: 100vh;
+    padding: 0 7%;
+    background: #f5f5f3;
+    color: #252525;
+    font-family: Arial, sans-serif;
+}
+
+/* Шапка */
+
+.admin-header {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dededb;
+}
+
+.admin-logo {
+    color: #252525;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.admin-logo span {
+    color: #a47b55;
+}
+
+.admin-header > span {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Навигация */
+
+.admin-nav {
+    display: flex;
+    gap: 10px;
+    padding: 25px 0;
+    border-bottom: 1px solid #dededb;
+}
+
+.admin-nav button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.admin-nav button:hover {
+    background: #e9e7e2;
+}
+
+.admin-nav button.active {
+    background: #292929;
+    color: white;
+}
+
+/* Основная область */
+
+.admin-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding-bottom: 60px;
+}
+
+.admin-content h1 {
+    margin: 0 0 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.admin-content h2 {
+    margin: 35px 0 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.admin-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.admin-content p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Формы */
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 650px;
+    padding: 25px;
+    border: 1px solid #e1dfda;
+    border-radius: 6px;
+    background: white;
+}
+
+.admin-form h2 {
+    margin: 0 0 8px;
+}
+
+.admin-form input:not([type="checkbox"]),
+.admin-form textarea,
+.admin-content select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d8d8d4;
+    border-radius: 4px;
+    background: #fff;
+    color: #252525;
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-content select:focus {
+    border-color: #a47b55;
+}
+
+.admin-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.admin-form label,
+.admin-content > label {
+    color: #555;
+    font-size: 14px;
+}
+
+.admin-form input[type="file"] {
+    padding: 10px;
+    background: #f8f8f6;
+}
+
+.admin-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    line-height: 1.4;
+}
+
+.admin-checkbox input,
+.admin-track-settings input {
+    accent-color: #a47b55;
+}
+
+.admin-form button,
+.admin-content > button,
+.admin-actions button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    background: #292929;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.admin-form button:hover,
+.admin-content > button:hover,
+.admin-actions button:hover {
+    background: #a47b55;
+}
+
+.admin-content > button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.admin-note {
+    margin: 0;
+    font-size: 12px !important;
+    color: #888 !important;
+}
+
+/* Списки */
+
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.admin-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 22px;
+    border: 1px solid #e1dfda;
+    border-radius: 6px;
+    background: white;
+}
+
+.admin-item p {
+    margin: 5px 0;
+}
+
+.admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.admin-actions a {
+    display: inline-block;
+    padding: 11px 16px;
+    border: 1px solid #a47b55;
+    border-radius: 4px;
+    color: #8b6545;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.admin-actions a:hover {
+    background: #a47b55;
+    color: white;
+}
+
+.admin-actions .reject-button {
+    background: #f0e9e5;
+    color: #8b4436;
+}
+
+.admin-actions .reject-button:hover {
+    background: #8b4436;
+    color: white;
+}
+
+/* Настройки треков */
+
+.admin-track-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 230px;
+}
+
+.admin-track-settings label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-size: 13px;
+}
+
+/* Сообщения */
+
+.admin-error,
+.admin-message {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 14px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.admin-error {
+    background: #f8e9e7;
+    color: #a33d32;
+}
+
+.admin-message {
+    background: #e9f1e8;
+    color: #426b43;
+}
+
+/* Адаптивность */
+
+@media (max-width: 700px) {
+    .admin-page {
+        padding: 0 5%;
+    }
+
+    .admin-header {
+        min-height: 75px;
+        gap: 15px;
+    }
+
+    .admin-logo {
+        font-size: 21px;
+    }
+
+    .admin-header > span {
+        font-size: 9px;
+        text-align: right;
+    }
+
+    .admin-nav {
+        gap: 5px;
+        overflow-x: auto;
+    }
+
+    .admin-nav button {
+        padding: 10px 12px;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .admin-content {
+        margin-top: 28px;
+    }
+
+    .admin-content h1 {
+        font-size: 25px;
+    }
+
+    .admin-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-track-settings {
+        min-width: auto;
+    }
+
+    .admin-actions {
+        width: 100%;
+    }
+}
