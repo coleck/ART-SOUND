@@ -29,12 +29,11 @@ dist/
 data/
 results/
 
-# Uploaded media (will be transferred to the server separately)
-media/*
-!media/.gitkeep
+# Uploaded artwork and audio files
 
 # Database backups
 backup_*.sql
+*.dump
 
 # Generated QR codes
 backend/media/

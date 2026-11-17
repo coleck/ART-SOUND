@@ -20,6 +20,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем исходный код backend.
 COPY backend/ ./backend/
+COPY media/ ./media/
 
 # Запускаем FastAPI.
 WORKDIR /app/backend
